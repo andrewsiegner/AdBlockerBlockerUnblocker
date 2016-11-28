@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        BusinessInsiderPGrabber
+// @name        BusinessInsiderGreaseMonkeyAdBlockerAllower
 // @namespace   pGrab
 // @include     http://www.businessinsider.com/*
 // @grant       none
