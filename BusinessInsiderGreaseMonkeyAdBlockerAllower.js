@@ -11,8 +11,7 @@ function removeAdBlockerBlocker() {
 //Grab the parent element which in this case is body
 var parent = document.getElementsByTagName("body")[0];
   
-//Set overflow to scroll on body, its set to hidden when the ad-blocker is detected
-parent.style.overflow = "scroll";
+
   
 //grab the child elements that block the page when an ad-blocker is detected
 var child = document.getElementsByClassName("tp-modal")[0];
@@ -20,6 +19,9 @@ var backDrop = document.getElementsByClassName("tp-backdrop")[0];
   
   //Check if the blocking elements were found, if so, delete them and break the loop
   if (child != null && backDrop != null) {
+       //Set overflow to scroll on body, its set to hidden when the ad-blocker is detected
+       parent.style.overflow = "scroll";
+       //Remove blocking elements
        parent.removeChild(child);
        parent.removeChild(backDrop);
        clearInterval(myInterval);
