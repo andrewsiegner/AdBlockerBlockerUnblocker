@@ -27,5 +27,5 @@ var backDrop = document.getElementsByClassName("tp-backdrop")[0];
 }
 
 //Set this function on a timed loop, running once every 2 seconds until it succeeds at removing the blocking elements. 
-//The blocking elements are not added immediately, so the function is called once every 2 seconds until they do and can be removed.
+//The blocking elements are not added immediately, so the function is called once every 2 seconds until they are and can be removed.
 myInterval = setInterval(removeAdBlockerBlocker, 2000);
