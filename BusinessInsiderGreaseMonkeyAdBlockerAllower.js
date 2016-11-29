@@ -18,7 +18,7 @@ parent.style.overflow = "scroll";
 var child = document.getElementsByClassName("tp-modal")[0];
 var backDrop = document.getElementsByClassName("tp-backdrop")[0];
   
-  //if those blocking elements have been appended (as soon as the blocking elements get appended remove them and break check/delete loop
+  //Check if the blocking elements were found, if so, delete them and break the loop
   if (child != null && backDrop != null) {
        parent.removeChild(child);
        parent.removeChild(backDrop);
